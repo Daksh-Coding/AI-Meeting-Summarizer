@@ -1,6 +1,9 @@
 # AI-Meeting-Summarizer
 This project presents an AI-powered solution for automating online meeting transcription, summarization, and action item extraction. It addresses the common challenge of missed or forgotten meeting content by generating concise, structured outputs from raw audio. Designed for professionals working in remote or hybrid environments, the tool improves meeting recall and reduces the need for manual follow-ups. Built with accessibility and clarity in mind, it allows users to quickly catch up on key decisions and responsibilities.
+<br><br>
+![Screenshot of starting page 1.](/StartingUI_1.png)
 <br>
+![Screenshot of starting page 1.](/StartingUI_2.png)
 ## Key Technologies Used
 - **Python:** Core programming language used to integrate models and UI components.
 - **Whisper:** Used for transcribing online meeting audio.
@@ -26,6 +29,12 @@ This project presents an AI-powered solution for automating online meeting trans
 - Employees who miss meetings often struggle to catch up or ask colleagues, leading to miscommunication and delays.
 - Taking notes manually during meetings is time-consuming and prone to missing important details.
 - This tool allows users to quickly revisit key decisions and action items without relying on others.
+<br><br> `Refer to In_Between_Processing folder for processing UI images.`<br>
+
+
+https://github.com/user-attachments/assets/bed84744-be09-4e0d-a8c1-9380f84edd37
+
+
 ## Future Improvements
 - Enable real-time transcription support for live meetings by integrating advanced streaming-capable and speaker identification models or deploying on a dedicated server.
 - Expand language support to handle multilingual meetings and non-English transcripts.

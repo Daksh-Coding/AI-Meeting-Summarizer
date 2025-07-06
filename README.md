@@ -34,6 +34,7 @@ This project presents an AI-powered solution for automating online meeting trans
 
 https://github.com/user-attachments/assets/bed84744-be09-4e0d-a8c1-9380f84edd37
 
+`Refer to the Outputs folder for downloaded files`
 
 ## Future Improvements
 - Enable real-time transcription support for live meetings by integrating advanced streaming-capable and speaker identification models or deploying on a dedicated server.

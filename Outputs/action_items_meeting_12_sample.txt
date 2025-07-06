@@ -1,0 +1,15 @@
+1. **Emily**: prepare a comparison report between our validation schema and RazerPay's expected structure and send it to Manish before UOD
+2. **John**: analyze the UPI failure patterns specifically for that 6 to 7pm slot and share a time series breakdown before tomorrow's sync
+3. **Currently**: it retries only once if a card fails but merchants have requested at least 3 retries before marking it failed
+4. **John**: audit the recent merge requests and flag anything that might be risky or require rollback consideration before Friday
+5. **Emily**: send a final QS-Samajee report of false staging builds to the group by Thursday morning
+6. **Priya**: notify the design team to freeze UI component updates after Thursday noon
+7. **Ankit**: draft a release readiness checklist by tomorrow including backend tasks, UI sign-offs and any pending API updates
+8. **John**: create a dashboard widget that visualizes reconciliation delay trends over the past 24 hours
+9. **Ankit**: contact those merchants directly and guide them through the V2 API migration
+10. **Emily**: coordinate with QA to ensure we get real time feedback during the beta
+11. **Priya**: create a slide for the Monday readership review summarizing payment success trends and clearly highlight the dip in UPI success during peak time
+12. **not**: draft a proposal to retry failed UPI transactions via net banking where possible
+13. **Emily**: reach out to the compliance team and ask them to speed up document verification turnaround for tier 2 onboardings
+14. **Zoya**: coordinate with the documentation team to update the KYC instructions in the onboarding emails
+15. **case**: raise a buck and patch it

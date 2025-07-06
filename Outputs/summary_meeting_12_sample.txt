@@ -1,0 +1,27 @@
+• The Stripe integration is still a work in progress. We've hit a minor issue on the recurrent payment cycle. On the third retry, the validation fails only on test merchant accounts. But we need to sort that before the next release.
+
+• Zoya, respond to those merchants with a clear update and let them know it's due to reconciliation delays. Priya, set up a report on the average reconciliation delay times. John, create a dashboard widget that visualizes reconciliation delay trends over the past 24 hours. Add filters so the support team can view it by merchant or payment method.
+
+• Two merchants are still stuck on V1 of the API and refusing to migrate to V2. Ankit, contact those merchants directly and guide them through the V2 API migration. Now on to the beta rollout of the dashboard.
+
+• We've seen a small spike in drop transactions around 6pm to 7pm daily. It's consistent with peak traffic hours, but the success rate is dipping below 95%.
+
+• We're still seeing delays in KYC verification specially for tier 2 cities. Zoya, ping IT support and ask them to archive old Jira boards linked to GitHub reports.
+
+• Priya talked to the design team and asked them to change the color scheme on the payout delay alert box. John investigate whether the IFSC validation service is caching outdated data if that's the case.
+
+• We need to address the retry logic for the subscription renewal system. Currently, it retries only once if a card fails but merchants have requested at least 3 retries before marking it failed. Initially, the idea was to auto-approve refunds under Rs. 1,000.
+
+• The refund rule engine allows automatic processing for refunds below Rs. 200 for merchants with a trust score above 80. Make sure the logic includes both amount and score as filters. Emily validates the changes in staging after John pushes the update.
+
+• Payout scheduling has been a merchant request for ages. It lets merchants choose payout timings like 10am, 2pm or end of the day. John build a backend logic to batch and reluze payouts based on selected times.
+
+• Zoya, prepare an internal FAQ for the support team to handle merchant queries about this new feature. Priya, inform the legal team about the changes in payout scheduling so that they can review any compliance implications.
+
+• Zoya, create a new auto response template for webhook related issues. Anankit, add a new section in the developer portal under integration FAQs. Priya, schedule a knowledge-earning session next week. Emily, include the top 5 support themes in your weekly metrics report.
+
+• No new features should be merged to main after Thursday evening. John, audit the recent merge requests and flag anything that might be risky or require rollback consideration. Priya, notify the design team to freeze UI component updates after Thursday noon.
+
+• Ankit, draft a release readiness checklist by tomorrow including backend tasks, UI sign-offs and any pending API updates. Zoya, raise a ticket with the DevOps team asking them to optimize memory thresholds for the payout queue service. Emily, review the feedback from last month's merchant survey and extract the top 5 reoccurring pain points.
+
+• John: Add a short alert banner on the merchant dashboard homepage informing users about planning. Priya prepare an internal memo summarizing today's meeting, especially for the folks who couldn't join.

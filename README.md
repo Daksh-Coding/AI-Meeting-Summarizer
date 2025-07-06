@@ -1,2 +1,2 @@
 # AI-Meeting-Summarizer
-Generating Summaries and Action Items List using Whisper, BART Transformer, custom regex-based NLP rules.
+This project presents an AI-powered solution for automating online meeting transcription, summarization, and action item extraction. It addresses the common challenge of missed or forgotten meeting content by generating concise, structured outputs from raw audio. Designed for professionals working in remote or hybrid environments, the tool improves meeting recall and reduces the need for manual follow-ups. Built with accessibility and clarity in mind, it allows users to quickly catch up on key decisions and responsibilities.

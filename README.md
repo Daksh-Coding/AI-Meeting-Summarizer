@@ -14,7 +14,7 @@ This project presents an AI-powered solution for automating online meeting trans
 4. **Action Item Extraction with Custom Regex-based NLP:** Handcrafted regex patterns, common during online meetings, are applied to the transcript to identify and extract assigned tasks and action items.
 5. **Display via Streamlit UI:** The final transcript, summary, and action items are displayed on a clean, interactive Streamlit frontend for user review, along with downloading capability.
 > [!Note]
-> I deployed the project locally using Streamlit as hosting on sites like Heroku, Render, or Streamlit's Cloud Platform was not feasible due to the large sizes of models used :(
+> I deployed the project locally using Streamlit as hosting on sites like Heroku, Render, or Streamlit's Cloud Platform was not feasible due to the large sizes of libraries and models used (~5GB raw storage) :(
 ## Installation & Dependencies
 1. **Create a Virtual Environment:** I recommend doing so to avoid inconsistencies between different library versions. Use the command `conda create -n meet_env python=3.10.18` to create a virtual env and use `conda activate meet_env` to activate it.
 2. **Clone the repository:** Use  `git clone _link_` to clone it to your local machine. Move to the repo's directory.

@@ -14,7 +14,6 @@ streamlit==1.32.0
 # Core dependencies
 numpy==1.26.4
 numba==0.61.2
-pytorch==2.5.1
 regex==2024.11.6
 torch==2.1.2
 torchaudio==2.1.2

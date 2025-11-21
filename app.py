@@ -2,6 +2,8 @@ import os
 import re
 import tempfile
 import streamlit as st
+import nltk
+from nltk.data import find
 import whisper
 from pydub import AudioSegment
 os.environ["USE_TF"] = "0"        # Disabled tensorflow as torch tensors perform same task with less overhead resulting in faster start up times (reasoned through experimentation)
@@ -210,10 +212,17 @@ def initialize_session_state():
     if 'done' not in st.session_state:
         st.session_state.done = False
 
+def ensure_nltk_punkt():
+    try:
+        find('tokenizers/punkt')
+    except LookupError:
+        nltk.download('punkt', quiet=True)
+
 def main():
     st.set_page_config(page_title="Meeting Summarizer", page_icon="🎙️", layout="wide")
     st.title("🎙️ AI Meeting Summarizer")
     st.markdown("Upload your meeting audio/video to get intelligent transcription, summary, and action items.")
+    ensure_nltk_punkt()
     initialize_session_state()
     summarizer = load_summarization_model()
     if summarizer:
@@ -296,4 +305,5 @@ def main():
                 st.download_button("📥 Download Action Items",data['actions'],file_name=f"action_items_{data['filename']}.txt",mime="text/plain",key="download_actions")
 
 if __name__ == "__main__":
+
     main()
